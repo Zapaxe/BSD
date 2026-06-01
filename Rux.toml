@@ -2,5 +2,5 @@
 Name = "BSD"
 Version = "0.1.0"
 Type = "Source"
-Description = "BSD API"
+Description = "BSD API (FreeBSD, OpenBSD, NetBSD, DragonFly)"
 Authors = ["Rux Contributors <info@rux-lang.dev>"]
