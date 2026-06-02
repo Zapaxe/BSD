@@ -107,11 +107,11 @@ module BSD {
     }
 
     func IsError(result: int64) -> bool {
-        return result < 0i64 && result >= -4095i64;
+        return result > 0i64 && result <= 4095i64;
     }
 
     func Errno(result: int64) -> int64 {
-        return IsError(result) ? -result : 0i64;
+        return IsError(result) ? result : 0i64;
     }
 
     struct timespec {
